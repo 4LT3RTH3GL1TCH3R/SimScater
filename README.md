@@ -1,4 +1,4 @@
-# 🔐 Hyper Obfuscator – "Code Confusion Engine"
+# 🔐 SimScater – "Code Confusion Engine"
 
 This project contains a Python-based **hyper-obfuscator** designed to transform any `.py` script into a bloated, encrypted, randomized, anti-reverse-engineering nightmare. A 20 KB script will balloon into a **10–20 MB single Python file** that runs the original logic — but hides it under extreme obfuscation layers.
 
