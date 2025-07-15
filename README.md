@@ -31,19 +31,3 @@ Security Level
 │   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 └────────────────────────────────────────────►
                Build Time / Output Size
-Pain Level for RE
-│
-│   🤬 HYPERMAX: Insanity (25x layers, traps, 10x noise, 1000+ chars/byte)
-│       └── Requires custom tools + months of patience
-│
-│   😤 SECURE: Brutal (10x layers, 5x noise, 500+ chars/byte)
-│       └── Every byte is encoded & buried in noise + multi-layer recursion
-│
-│   😠 RECOMMENDED: Challenging (3x layers, 2x noise, 200 chars/byte)
-│       └── Still needs real effort to reverse
-│
-│   😐 LIGHT: Mild (1x layer, 1x noise, 100 chars/byte)
-│       └── Easy for experienced engineers or static tools
-└────────────────────────────────────────────────────────────►
-                    Reverse Engineer Skill Level
-         (Beginner → Intermediate → Advanced → Expert)
