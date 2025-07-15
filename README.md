@@ -1,33 +1,6 @@
-Security Level
-│
-│   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-│   ┃ 🔥 HYPERMAX                                          ┃
-│   ┃ - 25 Layers, 10× Noise, 1000 Chars/Byte              ┃
-│   ┃ - 50MB+ Output, Decoding is Hellish                  ┃
-│   ┃ - Requires deep tooling, persistence, or defeat      ┃
-│   ┃ - Expert reverse engineers only — likely burnout     ┃
-│   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-│
-│   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-│   ┃ 🧱 SECURE                                  ┃
-│   ┃ - 10 Layers, 5× Noise, 500 Chars/Byte      ┃
-│   ┃ - High resistance to reverse engineering   ┃
-│   ┃ - Slower to build and decode               ┃
-│   ┃ - Strong against manual and tool-based RE  ┃
-│   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-│
-│   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-│   ┃ ✅ RECOMMENDED                       ┃
-│   ┃ - 3 Layers, 2× Noise, 200 Chars/Byte ┃
-│   ┃ - Balanced performance and security  ┃
-│   ┃ - Ideal for general-purpose release  ┃
-│   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-│
-│   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-│   ┃ ⚡ LIGHT                     ┃
-│   ┃ - 1 Layer, 1× Noise, 100 C/B┃
-│   ┃ - Fastest, minimal strength ┃
-│   ┃ - Dev/test use mostly       ┃
-│   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-└────────────────────────────────────────────►
-               Build Time / Output Size
+| **Tier**          | **Layers** | **Noise** | **Chars/Byte** | **Reverse Eng. Difficulty** | **Estimated Time to Decode** | **Target Skill Level** |
+| ----------------- | ---------- | --------- | -------------- | --------------------------- | ---------------------------- | ---------------------- |
+| ⚡ **Light**       | 1          | 1×        | 100            | 🔓 Low                      | 10–30 minutes                | Beginner               |
+| ✅ **Recommended** | 3          | 2×        | 200            | 🔐 Moderate                 | 1–4 hours                    | Intermediate           |
+| 🧱 **Secure**     | 10         | 5×        | 500            | 🔒 High                     | 6–18 hours                   | Advanced               |
+| 🔥 **Hypermax**   | 25         | 10×       | 1000           | 🔥 Extreme                  | 3+ days (or burnout)         | Expert / Specialist    |
