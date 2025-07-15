@@ -1,84 +1,49 @@
-# 🔐 SimScater – "Code Confusion Engine"
-
-This project contains a Python-based **hyper-obfuscator** designed to transform any `.py` script into a bloated, encrypted, randomized, anti-reverse-engineering nightmare. A 20 KB script will balloon into a **10–20 MB single Python file** that runs the original logic — but hides it under extreme obfuscation layers.
-
----
-
-## 🚀 What It Does
-
-- ✅ Obfuscates every byte of your original script
-- ✅ Encodes each byte into a **random 200–400 character string**
-- ✅ Injects **300%+ randomized fake strings** (noise) that mimic the real ones
-- ✅ Stores all data as a compressed + base64 payload
-- ✅ Embeds that payload in a **self-contained `.py` runner**
-- ✅ Uses a custom multi-layer decoder to reverse the chaos at runtime
-
----
-
-## 🔐 Obfuscation Techniques Used
-
-| Layer                      | Description                                                                 |
-|---------------------------|-----------------------------------------------------------------------------|
-| **Per-byte expansion**     | Each byte → 200–400 char random string                                      |
-| **Random mapping**         | Fresh mapping every time, no reused keys                                    |
-| **Massive noise injection**| 3× more fake strings than real ones                                         |
-| **Base64 + zlib wrapper**  | Compresses large garbage into a single blob                                 |
-| **Multi-stage runner**     | base64 → zlib → JSON → decode → execute                                     |
-| **Globals-aware exec**     | Executes in real Python global scope                                        |
-
----
-
-## 📈 Reverse Engineering Difficulty
-
-| Attacker Type          | Knows Format? | Estimated Time   | Realistic Reaction            |
-|------------------------|---------------|------------------|-------------------------------|
-| 🧑 Beginner             | ❌ No          | ❌ Never          | Rage quits instantly          |
-| 🧠 Intermediate         | ❌ No          | 24–72+ hours      | Needs custom tools            |
-| 🧠 Expert (cold)        | ❌ No          | 12–36 hours       | Deep manual reverse needed    |
-| 🧠 Expert (informed)    | ✅ Yes         | 3–6 hours         | Still annoying and bloated    |
-| 🤖 Automation tools     | ❌ No          | ⛔️ Fail entirely   | Can't parse randomized chaos  |
-
----
-
-## 🧬 Technical Stats (for a 20 KB script)
-
-| Metric                     | Result                            |
-|----------------------------|-----------------------------------|
-| Output file size           | 10–20 MB                          |
-| Avg encoding per byte      | 200–400 chars                     |
-| Total encoded strings      | 20,000 real + 60,000 fake         |
-| Payload type               | zlib-compressed JSON, base64      |
-| Final format               | Single executable `.py` file      |
-
----
-
-## 💣 Why It's a Nightmare to Reverse
-
-- 🔁 Every obfuscation is unique
-- 🔊 No string patterns, no consistent length
-- 🎭 Fake strings are indistinguishable from real ones
-- 🧩 Encoding format is custom and undocumented
-- 🧱 Multi-layer logic can't be flattened easily
-- 🧼 No hints in the payload — it's just garbage without context
-
----
-
-## 🛠️ Usage (Simple)
-
-1. Run the `hyper_obfuscator.py` script.
-2. Enter the path to your real `.py` source file.
-3. Choose the output filename for the obfuscated runner.
-4. Done — it generates a bloated `.py` file that runs the original code but reveals nothing.
-
----
-
-## ☠️ Disclaimer
-
-This is **not encryption**, and **not meant for malicious use**. It is purely for:
-- Reverse engineering prevention
-- Code protection
-- Anti skidding
-
-Reverse engineers: enjoy the migraine.
-
----
+Security Level
+│
+│   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+│   ┃ 🔥 HYPERMAX                                          ┃
+│   ┃ - 25 Layers, 10× Noise, 1000 Chars/Byte              ┃
+│   ┃ - 50MB+ Output, Decoding is Hellish                  ┃
+│   ┃ - Requires deep tooling, persistence, or defeat      ┃
+│   ┃ - Expert reverse engineers only — likely burnout     ┃
+│   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+│
+│   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+│   ┃ 🧱 SECURE                                  ┃
+│   ┃ - 10 Layers, 5× Noise, 500 Chars/Byte      ┃
+│   ┃ - High resistance to reverse engineering   ┃
+│   ┃ - Slower to build and decode               ┃
+│   ┃ - Strong against manual and tool-based RE  ┃
+│   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+│
+│   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+│   ┃ ✅ RECOMMENDED                       ┃
+│   ┃ - 3 Layers, 2× Noise, 200 Chars/Byte ┃
+│   ┃ - Balanced performance and security  ┃
+│   ┃ - Ideal for general-purpose release  ┃
+│   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+│
+│   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+│   ┃ ⚡ LIGHT                     ┃
+│   ┃ - 1 Layer, 1× Noise, 100 C/B┃
+│   ┃ - Fastest, minimal strength ┃
+│   ┃ - Dev/test use mostly       ┃
+│   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+└────────────────────────────────────────────►
+               Build Time / Output Size
+Pain Level for RE
+│
+│   🤬 HYPERMAX: Insanity (25x layers, traps, 10x noise, 1000+ chars/byte)
+│       └── Requires custom tools + months of patience
+│
+│   😤 SECURE: Brutal (10x layers, 5x noise, 500+ chars/byte)
+│       └── Every byte is encoded & buried in noise + multi-layer recursion
+│
+│   😠 RECOMMENDED: Challenging (3x layers, 2x noise, 200 chars/byte)
+│       └── Still needs real effort to reverse
+│
+│   😐 LIGHT: Mild (1x layer, 1x noise, 100 chars/byte)
+│       └── Easy for experienced engineers or static tools
+└────────────────────────────────────────────────────────────►
+                    Reverse Engineer Skill Level
+         (Beginner → Intermediate → Advanced → Expert)
